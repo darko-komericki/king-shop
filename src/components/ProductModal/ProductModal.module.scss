@@ -9,7 +9,7 @@
   height: 100%;
 
   &[open] {
-    background-color: var(--color-columbia-blue);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -34,6 +34,11 @@
   max-height: calc(100% - 100px);
   overflow: auto;
   padding: var(--spacing-3);
+
+  @media screen and (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3);
+  }
 }
 
 .info {
@@ -55,6 +60,10 @@
   grid-template-columns: 1fr 1fr;
   padding-right: var(--spacing-5);
   gap: var(--spacing-3);
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-right: 0;
+  }
 
   & :first-child {
     grid-column: span 2;
