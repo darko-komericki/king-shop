@@ -26,7 +26,7 @@ const PRICE_RANGES = [
   { value: '{"min": 100, "max": null}', label: `${priceFormatter(100)} ...` },
 ];
 
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 21;
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
