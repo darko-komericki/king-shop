@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-5) var(--spacing-1);
+}
+
+.button {
+  font-size: var(--font-size-base);
+  appearance: none;
+  padding: 0 var(--spacing-2);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+
+  &:disabled {
+    cursor: not-allowed;
+    color: var(--color-glaucous);
+  }
+}
+
+.iconButton {
+  i {
+    font-size: var(--font-size-h5);
+  }
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: 700;
+}

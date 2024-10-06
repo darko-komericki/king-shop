@@ -1,0 +1,18 @@
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-top: var(--spacing-5);
+  padding-bottom: var(--spacing-5);
+
+  svg {
+    width: 50px;
+    height: auto;
+  }
+
+  h2 {
+    font-size: var(--font-size-h5);
+  }
+}

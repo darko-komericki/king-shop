@@ -1,0 +1,38 @@
+.filters {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+  }
+}
+
+.heading {
+  font-size: var(--font-size-h5);
+  margin-bottom: var(--spacing-2);
+  display: block;
+  width: 100%;
+}
+
+.filter {
+  font-size: var(--font-size-base);
+  appearance: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  color: var(--color-paynes-gray);
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--color-black);
+}

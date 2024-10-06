@@ -1,0 +1,15 @@
+.button {
+  font-size: var(--font-size-small);
+  appearance: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+
+  i {
+    font-size: var(--font-size-base);
+  }
+}
