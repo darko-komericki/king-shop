@@ -82,12 +82,16 @@
   }
 }
 
-.toggle {
+.close {
   appearance: none;
-  background-color: transparent;
+  padding: 0;
   border: none;
   cursor: pointer;
-  padding: var(--spacing-1);
+  background-color: transparent;
+
+  i {
+    font-size: var(--font-size-h5);
+  }
 }
 
 .header {
