@@ -27,7 +27,7 @@ export default function ProductModal(props) {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [handleKeyDown]);
 
   return (
     <dialog className={styles.modal} ref={dialogRef} open={showDetails}>
