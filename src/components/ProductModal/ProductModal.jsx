@@ -42,7 +42,7 @@ export default function ProductModal(props) {
               setSelectedProduct(null);
             }}
           >
-            <i class="ri-close-large-line"></i>
+            <i className="ri-close-large-line"></i>
           </button>
         </header>
         <section className={styles.modalContent}>
